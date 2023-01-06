@@ -31,9 +31,11 @@ a {
 }
 .certs {
   height: 500px;
-  margin: auto;
+  margin: 20px auto;
   display: none;
+  cursor: pointer;
 }
+
 
 p, li {
   letter-spacing: 1px;
@@ -49,8 +51,8 @@ p, li {
 .project-tile {
   width: 200px;
   padding: 5px;
-  height: 100%;
-  margin: auto;
+  height: 200px;
+  margin: 20px auto;
   box-shadow: 0px 0px 2px 5px;
   border-radius: 10px;
   font-size: 16px;
@@ -75,12 +77,15 @@ p, li {
   font-size: 30px;
   cursor: pointer;
 }
-
+.show {
+  display: block;
+}
 @media (max-width: 450px) {
   .project-tile {
     width: 80%;
     height: 150px;
     margin-bottom: 15px;
     justify-content: center;
+    padding-block: 20px;
   }
 }

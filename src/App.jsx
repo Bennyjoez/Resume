@@ -2,10 +2,16 @@ import React from "react";
 
 
 export default function App() {
-  const [display, setDisplay] = React.useState(false)
+  const [res, setRes] = React.useState(false)
+  const [javascript, setJavascript] = React.useState(false)
 
-  function showCert() {
+  function showCert(string) {
     //display the cert of the clicked link
+    if(string === "responsive") {
+      setRes(!res)
+    } else if(string === "javascript") {
+      setJavascript(!javascript)
+    }
   }
 
   return (
@@ -23,7 +29,8 @@ export default function App() {
         Summary
       </h2>
       <p className="description">
-        Self-taught software developer with experience in front-end web development and a passion for creating innovative and user-friendly applications. Proficient in HTML, CSS, JavaScript, and React Js, with a strong focus on best practices and clean, readable code. Familiar with ChatGPT and other artificial intelligence and natural language processing technologies. Currently enrolled in a Web3 Development Bootcamp at Alchemy University, with plans to further my education through a full-stack developer program at Microverse and finish my full-stack development certification in 2023. Seeking a software developer internship or entry-level position to gain practical experience and contribute my skills to a team.
+      Self-taught software developer with experience in front-end web development and a passion for creating innovative and user-friendly applications. Proficient in HTML, CSS, JavaScript, and React Js, with a strong focus on best practices and clean, readable code. Familiar with ChatGPT and other artificial intelligence and natural language processing technologies. <br />
+      Currently enrolled in a Web3 Development Bootcamp at Alchemy University, with plans to further my education through a full-stack developer program at Microverse and finish my full-stack development certification in 2023. I am seeking a software developer internship or entry-level position to gain practical experience and contribute my skills to a team.
       </p>
       <h2 className="section-heading">Skills</h2>
       <ul>
@@ -42,12 +49,14 @@ export default function App() {
       <h2 className="section-heading">Certifications</h2>
       <ul>
         <li>
-          <a href="https://www.freecodecamp.org/certification/bennyjoez/responsive-web-design">freeCodeCamp: Responsive Web Design</a>
-          <img src="/images/responsive-web.png" alt="Responsive web certification" className="certs" />
+          <a href="https://www.freecodecamp.org/certification/bennyjoez/responsive-web-design" target={"_blank"} onClick={() => showCert('responsive')}>freeCodeCamp: Responsive Web Design</a>
+          <img src="/images/responsive-web.png" alt="Responsive web certification" className={`certs ${res ? "show" : ""}`} />
         </li>
         <li>
-          <a href="https://www.freecodecamp.org/certification/bennyjoez/javascript-algorithms-and-data-structures">freeCodeCamp: JavaScript Algorithms and Data Structures</a>
-          <img src="/images/javascript-algorithims-data-structures.png" alt="Javascript certification" className="certs" />
+          <a href="https://www.freecodecamp.org/certification/bennyjoez/javascript-algorithms-and-data-structures" target={"_blank"} onClick={() => showCert("javascript")}>
+            freeCodeCamp: JavaScript Algorithms and Data Structures
+          </a>
+          <img src="/images/javascript-algorithims-data-structures.png" alt="Javascript certification" className={`certs ${javascript ? 'show' : ''}`} />
         </li>
         <li>
           Full Stack Web Development Certification, Microverse (planned for 2023)
@@ -77,6 +86,11 @@ export default function App() {
         <li>Participated in the IT department of my local church, assisting with troubleshooting and maintaining computer systems.</li>
         <li>Mentored local youths interested in software development, helping them to understand the fundamentals of web development and assisting them with their projects.</li>
       </ul>
+      <footer className="footer">
+        <a href="https://twitter.com/bennyjoezz"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="mailto:njugunab655@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/benson-njuguna-008146242/"><i class="fa-brands fa-linkedin"></i></a>
+      </footer>
     </div>
   )
 }
