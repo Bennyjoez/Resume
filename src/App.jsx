@@ -50,13 +50,13 @@ export default function App() {
       <ul>
         <li>
           <a href="https://www.freecodecamp.org/certification/bennyjoez/responsive-web-design" target={"_blank"} onClick={() => showCert('responsive')}>freeCodeCamp: Responsive Web Design</a>
-          <img src="/images/responsive-web.png" alt="Responsive web certification" className={`certs ${res ? "show" : ""}`} />
+          <img src="/images/responsive-web.png" alt="Responsive web certification" className={`certs ${res ? "show" : ""}`} onClick={() => showCert('responsive')} />
         </li>
         <li>
-          <a href="https://www.freecodecamp.org/certification/bennyjoez/javascript-algorithms-and-data-structures" target={"_blank"} onClick={() => showCert("javascript")}>
+          <a href="https://www.freecodecamp.org/certification/bennyjoez/javascript-algorithms-and-data-structures" target={"_blank"} onClick={() => showCert("javascript")} >
             freeCodeCamp: JavaScript Algorithms and Data Structures
           </a>
-          <img src="/images/javascript-algorithims-data-structures.png" alt="Javascript certification" className={`certs ${javascript ? 'show' : ''}`} />
+          <img src="/images/javascript-algorithims-data-structures.png" alt="Javascript certification" className={`certs ${javascript ? 'show' : ''}`} onClick={() => showCert("javascript")} />
         </li>
         <li>
           Full Stack Web Development Certification, Microverse (planned for 2023)
