@@ -18,12 +18,12 @@ export default function App() {
     <div className="container">
       <h1 className="name">BENSON NJUGUNA KAMAU</h1>
       <h3>Front-end Developer</h3>
-      <h4>njugunab655@gmail.com</h4>
+      <a href="mailto:njugunab655@gmail.com"><h4>njugunab655@gmail.com</h4></a>
       <h4>+254703599801</h4>
       <div className="social">
-        <a href="https://twitter.com/bennyjoezz"><i class="fa-brands fa-square-twitter"></i></a>
-        <a href="mailto:njugunab655@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/benson-njuguna-008146242/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/bennyjoezz" target={"_blank"}><i className="fa-brands fa-square-twitter"></i></a>
+        <a href="mailto:njugunab655@gmail.com" target={"_blank"}><i className="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/benson-njuguna-008146242/" target={"_blank"}><i className="fa-brands fa-linkedin"></i></a>
       </div>
       <h2 className="section-heading">
         Summary
@@ -91,9 +91,9 @@ export default function App() {
         <li>* Mentored local youths interested in software development, helping them to understand the fundamentals of web development and assisting them with their projects.</li>
       </ul>
       <footer className="footer">
-        <a href="https://twitter.com/bennyjoezz"><i class="fa-brands fa-square-twitter"></i></a>
-        <a href="mailto:njugunab655@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/benson-njuguna-008146242/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/bennyjoezz" target={"_blank"}><i className="fa-brands fa-square-twitter"></i></a>
+        <a href="mailto:njugunab655@gmail.com" target={"_blank"}><i className="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/benson-njuguna-008146242/" target={"_blank"}><i className="fa-brands fa-linkedin"></i></a>
       </footer>
     </div>
   )
