@@ -105,6 +105,9 @@ p, li {
   font-size: 18px;
   margin: 10px;
 }
+i:hover {
+  box-shadow: 0px 0px 3px 4px skyblue;
+}
 @media (max-width: 450px) {
   .project-tile {
     width: 80%;

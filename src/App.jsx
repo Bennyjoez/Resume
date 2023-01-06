@@ -65,20 +65,24 @@ export default function App() {
       <h2 className="section-heading" >Projects</h2>
       <ul className="projects">
         <li className="project-tile" >
-          <a href="https://ben-portfolio-website.netlify.app/"><span className="project-tile-heading" >Personal portfolio website <span className="languages-used">(HTML, CSS, JavaScript)</span></span></a> <br /> 
-          Created a personal portfolio website to showcase my skills and projects. Utilized responsive design techniques to ensure that the website looked great on all devices.
+          <span className="project-tile-heading" >Personal portfolio website <span className="languages-used">(HTML, CSS, JavaScript)</span></span> <br /> 
+          Created a personal portfolio website to showcase my skills and projects. Utilized responsive design techniques to ensure that the website looked great on all devices. <br />
+          <a href="https://ben-portfolio-website.netlify.app/">link</a>
         </li>
         <li className="project-tile" >
-          <a href="https://todo-app-by-ben.netlify.app/"><span className="project-tile-heading" >Todo list app <span className="languages-used">(HTML, CSS, JavaScript)</span></span></a> <br />
+          <span className="project-tile-heading" >Todo list app <span className="languages-used">(HTML, CSS, JavaScript)</span></span> <br />
           Built a todo list app to practice using HTML, CSS, and JavaScript and creating interactive front-end elements.
+          <a href="https://todo-app-by-ben.netlify.app/">link</a>
         </li>
         <li className="project-tile" >
-          <a href="https://quizzical-scrimb.netlify.app/"><span className="project-tile-heading" >Quizzical web app <span className="languages-used">(HTML, CSS, JavaScript, React Js)</span></span></a> <br /> 
+          <span className="project-tile-heading" >Quizzical web app <span className="languages-used">(HTML, CSS, JavaScript, React Js)</span></span> <br /> 
           Created a quizzical web app using React Js to allow users to test their knowledge on various topics.
+          <a href="https://quizzical-scrimb.netlify.app/">link</a>
         </li>
         <li className="project-tile" >
-          <a href="https://atril-ben-weather-app.netlify.app/"><span className="project-tile-heading" >Weather app <span className="languages-used">(HTML, CSS, JavaScript)</span></span></a> <br /> 
+          <span className="project-tile-heading" >Weather app <span className="languages-used">(HTML, CSS, JavaScript)</span></span> <br /> 
           Built a weather app in collaboration with a partner to practice working in a team and utilizing APIs
+          <a href="https://atril-ben-weather-app.netlify.app/">link</a>
         </li>
       </ul>
       <h2 className="section-heading" >Volunteer Work</h2>
