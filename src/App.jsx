@@ -33,28 +33,28 @@ export default function App() {
       Currently enrolled in a Web3 Development Bootcamp at Alchemy University, with plans to further my education through a full-stack developer program at Microverse and finish my full-stack development certification in 2023. I am seeking a software developer internship or entry-level position to gain practical experience and contribute my skills to a team.
       </p>
       <h2 className="section-heading">Skills</h2>
-      <ul>
-        <li>Front-end web development <span className="languages-used">(HTML, CSS, JavaScript, React Js)</span></li>
-        <li>Artificial intelligence and natural language processing technologies (e.g. ChatGPT)</li>
-        <li>Bootstrap, Sass, VS Code, Git</li>
-        <li>Team player with strong communication skills</li>
-        <li>Passionate about learning and helping others in the development field</li>
+      <ul className="skills">
+        <li>Front-end web development <span className="languages-used">(HTML, CSS, JavaScript, React Js).</span></li>
+        <li>Artificial intelligence and natural language processing technologies (e.g. ChatGPT).</li>
+        <li>Bootstrap, Sass, VS Code, Git.</li>
+        <li>Team player with strong communication skills.</li>
+        <li>Passionate about learning and helping others in the development field.</li>
       </ul>
       <h2 className="section-heading">Education</h2>
-      <ul>
-        <li>FreeCodeCamp Bootcamp (2022): Completed the Responsive Web Design, JavaScript Algorithms and Data Structures course to learn the foundations of web development.</li>
-        <li>Scrimba Bootcamp (2022): Completed the React course to learn how to build interactive front-end applications using the React library.</li>
-        <li>Web3 Development Bootcamp, Alchemy University (December 2022-present)</li>
+      <ul className="education">
+        <li><span className="strong">FreeCodeCamp Bootcamp (2022):</span> Completed the Responsive Web Design, JavaScript Algorithms and Data Structures course to learn the foundations of web development.</li>
+        <li><span className="strong">Scrimba Bootcamp (2022):</span> Completed the React course to learn how to build interactive front-end applications using the React library.</li>
+        <li className="strong">Web3 Development Bootcamp, Alchemy University (December 2022-present)</li>
       </ul>
       <h2 className="section-heading">Certifications</h2>
-      <ul>
+      <ul className="certification">
         <li>
-          <a href="https://www.freecodecamp.org/certification/bennyjoez/responsive-web-design" target={"_blank"} onClick={() => showCert('responsive')}>freeCodeCamp: Responsive Web Design</a>
+          <a href="https://www.freecodecamp.org/certification/bennyjoez/responsive-web-design" target={"_blank"} onClick={() => showCert('responsive')}>1. freeCodeCamp: Responsive Web Design</a>
           <img src="/images/responsive-web.png" alt="Responsive web certification" className={`certs ${res ? "show" : ""}`} onClick={() => showCert('responsive')} />
         </li>
         <li>
           <a href="https://www.freecodecamp.org/certification/bennyjoez/javascript-algorithms-and-data-structures" target={"_blank"} onClick={() => showCert("javascript")} >
-            freeCodeCamp: JavaScript Algorithms and Data Structures
+            2. freeCodeCamp: JavaScript Algorithms and Data Structures
           </a>
           <img src="/images/javascript-algorithims-data-structures.png" alt="Javascript certification" className={`certs ${javascript ? 'show' : ''}`} onClick={() => showCert("javascript")} />
         </li>
@@ -83,8 +83,8 @@ export default function App() {
       </ul>
       <h2 className="section-heading" >Volunteer Work</h2>
       <ul>
-        <li>Participated in the IT department of my local church, assisting with troubleshooting and maintaining computer systems.</li>
-        <li>Mentored local youths interested in software development, helping them to understand the fundamentals of web development and assisting them with their projects.</li>
+        <li>* Participated in the IT department of my local church, assisting with troubleshooting and maintaining computer systems.</li><br />
+        <li>* Mentored local youths interested in software development, helping them to understand the fundamentals of web development and assisting them with their projects.</li>
       </ul>
       <footer className="footer">
         <a href="https://twitter.com/bennyjoezz"><i class="fa-brands fa-square-twitter"></i></a>

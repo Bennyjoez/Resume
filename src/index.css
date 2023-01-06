@@ -42,6 +42,9 @@ p, li {
   letter-spacing: 1px;
   font-size: 18px;
 }
+.skills > *, .education > *, .certification > * {
+  margin-bottom: 8px;
+}
 .projects {
   display: flex;
   align-items: flex-start;
@@ -69,6 +72,7 @@ p, li {
 }
 .section-heading {
   font-family: 'Courgette', cursive;
+  font-size: 1.5rem;
 }
 .social {
   display: flex;
@@ -81,6 +85,10 @@ p, li {
 }
 .show {
   display: block;
+}
+.strong {
+  font-weight: 600;
+  color: rgb(21, 21, 21);
 }
 .footer {
   position: fixed;
